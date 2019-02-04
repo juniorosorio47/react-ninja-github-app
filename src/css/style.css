@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+    text-align: center;
+}
+ul{
+
+    padding: 0;
+}
+
+.app{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+.search{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+
+.search input{
+    height: 40px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #0000004b;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.user-info{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-info img{
+    width: 250px;
+    border-radius: 10px;
+    margin-top:15px;
+    border: solid 5px #1191cc49;
+    box-shadow: 20px;
+}
+
+.user-info h1 a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.repos{
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    background:#e4e9ed79;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.actions{
+    margin-top:10px;
+    margin-bottom:10px;
+    height: 60px;
+    width: 400px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.actions button{
+    border-radius:5px;
+    height: 40px;
+    border: 1px solid #0000004b;
+    width: 100%;
+    margin:5px;
+    background: #1191cc;
+    color: white;
+    font-weight: bolder
+}
+
+.repos{
+    background:#e4e9ed79;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.repos .info ul{
+    list-style: none;
+}
+.repos .starred ul{
+    list-style: none;
+}
+
+.alerta{
+    width: 200px;;
+    height: 40px;
+    background: red;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
