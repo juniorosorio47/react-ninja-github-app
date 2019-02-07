@@ -1,5 +1,12 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+html{
+    padding: 0;
+    margin: 0;
 }
 
 a{
@@ -15,6 +22,28 @@ ul{
     padding: 0;
 }
 
+.mensagem{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    padding: 0;
+}
+
+.header{
+    background: #1191cc;
+    color: white;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .app{
     display: flex;
     align-content: center;
@@ -23,6 +52,8 @@ ul{
     height: auto;
     width: 100%;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 .search{
     height: 60px;
@@ -101,7 +132,6 @@ ul{
 .repos{
     background:#e4e9ed79;
     width: 100%;
-    border-radius: 10px;
     display: flex;
     align-content: center;
     justify-content: space-around;
@@ -114,16 +144,10 @@ ul{
 }
 .repos .starred ul{
     list-style: none;
+    padding: 0;
 }
-
-.alerta{
-    width: 200px;;
-    height: 40px;
-    background: red;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-
+h2{
+    text-align: center
 }
 
 

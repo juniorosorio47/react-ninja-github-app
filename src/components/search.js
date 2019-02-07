@@ -2,9 +2,10 @@
 
 import React from 'react'
 
-const Search = ({handleSearch}) => (
+const Search = ({handleSearch, isDisabled}) => (
     <div className='search'>
         <input 
+            disabled={isDisabled}
             type='search' 
             placeholder='Digite o usuário:' 
             onKeyUp={handleSearch}

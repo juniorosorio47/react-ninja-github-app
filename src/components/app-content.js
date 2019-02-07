@@ -1,24 +1,30 @@
 'use strict'
 
 import React from 'react'
+import Header from './header'
 import Search from './search'
 import UserInfo from './user-info'
 import Actions from './actions'
 import Repos from './repos'
+import Mensagem from './mensagem'
 import '../css/style.css'
 
-const AppContent = ({userinfo, repos, starred, handleSearch, getRepos}) => (
+const AppContent = ({userinfo, repos, starred, isFetching, isFetchingRepo, errorMsg, handleSearch, getRepos, getStarred}) => (
     <div className='app'>
-        <Search handleSearch={handleSearch}/>
+        <Header/>
+        <Search isDisabled={isFetching} handleSearch={handleSearch}/>
+        {isFetching && <Mensagem tipoMsg={'alert alert-info mensagem'} msg={'Carregando usuário...'}/>}
+        {errorMsg && <Mensagem tipoMsg={'alert alert-danger mensagem'} msg={'Usuário não encontrado'}/>}
         {!!userinfo && <UserInfo userinfo={userinfo}/>}
-        {!!userinfo && <Actions getRepos = {getRepos}/>}
+        {!!userinfo && <Actions getRepos = {getRepos} getStarred={getStarred}/>}
+        {isFetchingRepo && <Mensagem tipoMsg={'alert alert-info mensagem'} msg={'Carregando repositórios...'}/>}
             {!!repos.length && <Repos 
                 className='repos' 
-                title='Repositório'
+                title='Repositórios'
                 repos={repos}
             />}
             {!!starred.length && <Repos 
-                className='starred' 
+                className='starred'
                 title='Favoritos'
                 repos={starred}
             />}
