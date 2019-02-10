@@ -5,6 +5,7 @@ import ajax from '@fdaciuk/ajax'
 import AppContent from './components/app-content';
 
 class App extends React.Component{
+    
     constructor(){
         super()
         this.state = {
